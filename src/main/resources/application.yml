@@ -1,0 +1,18 @@
+spring:
+  profiles.active: docker
+  kafka:
+    topics:
+      -
+        name: "testTopic"
+        partitions: 6
+        replicas: 1
+      -
+        name: "newTestTopic"
+        partitions: 5
+        replicas: 1
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer

@@ -1,0 +1,7 @@
+spring:
+  kafka:
+    servers: broker:9092
+    producer:
+      bootstrap-servers: broker:9092
+    consumer:
+      bootstrap-servers: broker:9092
